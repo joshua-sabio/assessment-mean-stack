@@ -1,0 +1,13 @@
+<div class="list-group-item">
+  <a routerLink="{{ contact._id }}">
+    <div class="d-flex justify-content-between">
+      <h3 class="mb-1">{{ contact.name }}</h3>
+      <small><strong>ID: </strong>{{ contact._id }}</small>
+    </div>
+    <p class="mb-1">{{ contact.email }}</p>
+    <p class="mb-1">{{ contact.phone }}</p>
+  </a>
+  <hr>
+  <button class="btn btn-success" (click)="onEdit()">Edit</button>
+  <button class="btn btn-danger" (click)="onDelete()">Delete</button>
+</div>

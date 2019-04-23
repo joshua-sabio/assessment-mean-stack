@@ -1,0 +1,18 @@
+.form-group label {
+    margin-top: 10px;
+}
+
+button {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+input.ng-invalid.ng-touched {
+    border: 1px solid #ff9c9c;
+    background: #ffefef;
+    box-shadow: 0 0 2px red;
+}
+
+.help-block {
+    color: #ff5c5c;
+}

@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <app-form 
+          (addContact)="onAddContact($event)"
+          (emitContact)="logError()"
+          (updateContact)="onUpdateContact($event)"
+          [contactToEdit]="contactToEdit"></app-form>
+      </div>
+      <div class="col-lg-6">
+          <div class="list-group">
+        <app-user-list 
+          *ngFor="let contactElement of contacts; let i = index" 
+          [contact]="contactElement"
+          [index]="i"
+          (deleteItem)="onDelete($event)"
+          (startEdit)="onEditItem($event)"
+          [@contactList]></app-user-list>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
